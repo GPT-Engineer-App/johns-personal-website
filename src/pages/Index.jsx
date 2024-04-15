@@ -1,21 +1,11 @@
 import React from "react";
 import { Box, Heading, Text, Image, Stack, Flex, Link, Icon } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Layout from "../components/Layout";
 
 const Index = () => {
   return (
-    <Box>
-      <Flex as="header" align="center" justify="space-between" wrap="wrap" padding="1.5rem" bg="teal.500" color="white">
-        <Heading as="h1" size="lg" letterSpacing={"-.1rem"}>
-          John Marshall
-        </Heading>
-        <Stack direction="row" spacing={6}>
-          <Link href="#about">About</Link>
-          <Link href="#projects">Projects</Link>
-          <Link href="#contact">Contact</Link>
-        </Stack>
-      </Flex>
-
+    <Layout>
       <Box id="about" padding="2rem">
         <Heading as="h2" size="xl" mb={4}>
           About Me
@@ -47,7 +37,7 @@ const Index = () => {
               <Text fontSize="xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus dui nec euismod commodo.</Text>
             </Box>
           </Link>
-          </Stack>
+        </Stack>
       </Box>
 
       <Box id="contact" padding="2rem">
@@ -66,11 +56,7 @@ const Index = () => {
           </Link>
         </Stack>
       </Box>
-
-      <Box as="footer" padding="2rem" bg="teal.500" color="white" textAlign="center">
-        <Text>© {new Date().getFullYear()} John Marshall. All rights reserved.</Text>
-      </Box>
-    </Box>
+    </Layout>
   );
 };
 
