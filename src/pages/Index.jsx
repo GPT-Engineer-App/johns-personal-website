@@ -31,19 +31,23 @@ const Index = () => {
           Projects
         </Heading>
         <Stack spacing={8}>
-          <Box>
-            <Heading as="h3" size="lg" mb={2}>
-              Project 1
-            </Heading>
-            <Text fontSize="xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus dui nec euismod commodo.</Text>
-          </Box>
-          <Box>
-            <Heading as="h3" size="lg" mb={2}>
-              Project 2
-            </Heading>
-            <Text fontSize="xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus dui nec euismod commodo.</Text>
-          </Box>
-        </Stack>
+          <Link href="/project">
+            <Box>
+              <Heading as="h3" size="lg" mb={2}>
+                Project 1
+              </Heading>
+              <Text fontSize="xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus dui nec euismod commodo.</Text>
+            </Box>
+          </Link>
+          <Link href="/project">
+            <Box>
+              <Heading as="h3" size="lg" mb={2}>
+                Project 2
+              </Heading>
+              <Text fontSize="xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus dui nec euismod commodo.</Text>
+            </Box>
+          </Link>
+          </Stack>
       </Box>
 
       <Box id="contact" padding="2rem">
